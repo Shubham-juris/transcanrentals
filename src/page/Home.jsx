@@ -2,7 +2,7 @@ import HomeHeroImg from "../assets/home/HomeHerorImg6.jpg";
 import { Truck, Clock, DollarSign, Shield } from "lucide-react";
 import minitruck from "../assets/home/HomeHeroImg.jpg";
 import boxtruck from "../assets/home/HomeHeroImg4.jpg";
-import heavytruk from "../assets/home/HomeHerorImg5.jpg";
+import heavytruck from "../assets/home/HomeHerorImg5.jpg";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -15,22 +15,22 @@ const Home = () => {
 
   const services = [
     {
-      icon: <Truck size={40} className="text-red-500 mb-4" />,
+      icon: <Truck size={40} className="text-red-600 mb-4" />,
       title: "Wide Range of Trucks",
       desc: "From mini trucks to heavy-duty transport vehicles.",
     },
     {
-      icon: <Clock size={40} className="text-red-500 mb-4" />,
+      icon: <Clock size={40} className="text-red-600 mb-4" />,
       title: "On-Time Delivery",
       desc: "We ensure timely service for all your logistics needs.",
     },
     {
-      icon: <DollarSign size={40} className="text-red-500 mb-4" />,
+      icon: <DollarSign size={40} className="text-red-600 mb-4" />,
       title: "Affordable Rates",
       desc: "Best pricing without compromising quality.",
     },
     {
-      icon: <Shield size={40} className="text-red-500 mb-4" />,
+      icon: <Shield size={40} className="text-red-600 mb-4" />,
       title: "Safe & Secure",
       desc: "Fully insured trucks for worry-free rentals.",
     },
@@ -39,7 +39,7 @@ const Home = () => {
   const fleet = [
     { name: "Mini Truck", img: minitruck },
     { name: "Box Truck", img: boxtruck },
-    { name: "Heavy Duty", img: heavytruk },
+    { name: "Heavy Duty", img: heavytruck },
   ];
 
   return (
@@ -53,7 +53,7 @@ const Home = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-1 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <motion.div
           className="relative z-10 text-center px-4"
           initial={{ opacity: 0, y: 40 }}
@@ -61,7 +61,7 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-4xl md:text-6xl font-bold">
-            Reliable <span className="text-red-500">Truck Rentals</span> Across
+            Reliable <span className="text-red-600">Truck Rentals</span> Across
             Canada
           </h1>
           <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
@@ -70,7 +70,7 @@ const Home = () => {
           </p>
           <button
             onClick={() => navigate("/fleet")}
-            className="mt-6 inline-block bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg text-lg transition"
+            className="mt-6 inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-lg transition"
           >
             Book Your Truck Now
           </button>
@@ -81,7 +81,7 @@ const Home = () => {
       <section id="services" className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-10">
-            Why Choose <span className="text-red-500">Us?</span>
+            Why Choose <span className="text-red-600">Us?</span>
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             {services.map((service, idx) => (
@@ -106,7 +106,7 @@ const Home = () => {
       <section id="fleet" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-10">
-            Our <span className="text-red-500">Fleet</span>
+            Our <span className="text-red-600">Fleet</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {fleet.map((truck, idx) => (
@@ -130,7 +130,7 @@ const Home = () => {
                   </p>
                   <button
                     onClick={handleClick}
-                    className="mt-3 inline-block bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
+                    className="mt-3 inline-block bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition"
                   >
                     Rent Now
                   </button>
