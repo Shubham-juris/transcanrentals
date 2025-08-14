@@ -89,8 +89,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="bg-red-500 text-white text-center py-3 text-sm">
+        <div className="bg-red-600 text-white text-center py-2 text-sm">
           © {new Date().getFullYear()} TranscanRentals. All rights reserved.
+        </div>
+        <div className="bg-red-600 text-white text-center py-2 text-sm">
+          Powered by <span className="font-semibold">Greeakology</span>
         </div>
       </footer>
     </>
