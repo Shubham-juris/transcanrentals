@@ -1,21 +1,38 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <section className="bg-gray-50 py-16 px-6 md:px-20">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h1 className="text-4xl font-bold text-red-500 mb-6 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-bold text-red-500 mb-6 text-center"
+        >
           Contact Us
-        </h1>
-        <p className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-12">
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-12"
+        >
           Have questions or need a custom quote? We’re here to help! Fill out
           the form or reach us directly through the details below.
-        </p>
+        </motion.p>
 
         <div className="grid md:grid-cols-2 gap-10">
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white p-8 rounded-lg shadow-lg"
+          >
             <form className="space-y-6">
               <div>
                 <label className="block text-gray-700 font-semibold mb-2">
@@ -71,10 +88,15 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </div>
+          </motion.div>
 
           {/* Contact Info */}
-          <div className="flex flex-col justify-center bg-white p-8 rounded-lg shadow-lg">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col justify-center bg-white p-8 rounded-lg shadow-lg"
+          >
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               Get in Touch
             </h2>
@@ -105,7 +127,7 @@ const Contact = () => {
               allowFullScreen=""
               loading="lazy"
             ></iframe>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

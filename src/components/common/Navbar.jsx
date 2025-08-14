@@ -1,8 +1,14 @@
 import { useState } from "react";
 import { Menu, X, Truck } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const location = useLocation(); // current route check करने के लिए
+
+  const handleClick = () => {
+    navigate("/contact");
+  };
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
@@ -10,7 +16,6 @@ export default function Navbar() {
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Fleet", path: "/fleet" },
-    { name: "Pricing", path: "/pricing" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -19,7 +24,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2 text-white font-bold text-xl cursor-pointer">
+          <div
+            className="flex items-center gap-2 text-white font-bold text-xl cursor-pointer"
+            onClick={() => navigate("/")}
+          >
             <Truck size={28} className="text-red-500" />
             Transcan<span className="text-red-500">Rentals</span>
           </div>
@@ -30,17 +38,21 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-gray-300 hover:text-red-500 transition"
+                className={`transition ${
+                  location.pathname === link.path
+                    ? "text-red-500 font-semibold"
+                    : "text-gray-300 hover:text-red-500"
+                }`}
               >
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/book"
+            <button
+              onClick={handleClick}
               className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
             >
               Book Now
-            </Link>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -64,7 +76,11 @@ export default function Navbar() {
               key={link.name}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className="block text-gray-300 hover:text-red-500 transition"
+              className={`block transition ${
+                location.pathname === link.path
+                  ? "text-red-500 font-semibold"
+                  : "text-gray-300 hover:text-red-500"
+              }`}
             >
               {link.name}
             </Link>

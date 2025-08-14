@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Services() {
   const services = [
@@ -44,28 +45,43 @@ export default function Services() {
     <section className="bg-gray-50 py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h1 className="text-4xl font-bold text-red-500 mb-6 text-center">
+        <motion.h1
+          className="text-4xl font-bold text-red-500 mb-6 text-center"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           Our Services
-        </h1>
-        <p className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-12">
+        </motion.h1>
+
+        <motion.p
+          className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-12"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
           At <span className="font-semibold">TranscanRentals</span>, we offer a
           wide range of truck rental services tailored to meet your specific
           transportation needs.
-        </p>
+        </motion.p>
 
         {/* Services Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <div className="text-4xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 {service.title}
               </h3>
               <p className="text-gray-600">{service.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

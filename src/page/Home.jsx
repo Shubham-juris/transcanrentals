@@ -69,11 +69,7 @@ const Home = () => {
             your transport needs.
           </p>
           <button
-            onClick={() =>
-              document
-                .getElementById("fleet")
-                .scrollIntoView({ behavior: "smooth" })
-            }
+            onClick={() => navigate("/fleet")}
             className="mt-6 inline-block bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg text-lg transition"
           >
             Book Your Truck Now

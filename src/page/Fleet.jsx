@@ -1,7 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import fleetImg from "../assets/fleet/fleetImg.jpg";
 
+import fleetImg2 from "../assets/fleet/fleetImg2.jpg";
+import fleetImg3 from "../assets/fleet/fleetImg3.jpg";
+import fleetImg4 from "../assets/fleet/fleetImg4.jpg";
+import fleetImg5 from "../assets/fleet/fleetImg5.jpg";
+import fleetImg6 from "../assets/fleet/fleetImg6.jpg";
 export default function Fleet() {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -13,43 +19,37 @@ export default function Fleet() {
       name: "12 ft City Truck",
       description:
         "Compact and easy to maneuver — perfect for city deliveries and small moves.",
-      image:
-        "https://images.unsplash.com/photo-1601924582975-7c31c0a7f8c2?auto=format&fit=crop&w=800&q=80",
+      image: fleetImg,
     },
     {
       name: "20 ft Medium Truck",
       description:
         "Ideal for medium-distance hauls and larger household or office relocations.",
-      image:
-        "https://images.unsplash.com/photo-1581092336356-3e89f4f8f8f6?auto=format&fit=crop&w=800&q=80",
+      image: fleetImg2,
     },
     {
       name: "26 ft Heavy-Duty Truck",
       description:
         "Large cargo capacity with heavy-duty performance for demanding jobs.",
-      image:
-        "https://images.unsplash.com/photo-1600546323796-4a6be2e2c1b2?auto=format&fit=crop&w=800&q=80",
+      image: fleetImg6,
     },
     {
       name: "Refrigerated Truck",
       description:
         "Temperature-controlled trucks for perishable goods and sensitive cargo.",
-      image:
-        "https://images.unsplash.com/photo-1599819055800-d9b7a6a4f8b8?auto=format&fit=crop&w=800&q=80",
+      image: fleetImg4,
     },
     {
       name: "Flatbed Truck",
       description:
         "Perfect for transporting oversized loads and heavy machinery.",
-      image:
-        "https://images.unsplash.com/photo-1588334257834-b6a73f04dff3?auto=format&fit=crop&w=800&q=80",
+      image: fleetImg5,
     },
     {
       name: "Corporate Fleet",
       description:
         "Custom fleet rental packages for businesses with ongoing transport needs.",
-      image:
-        "https://images.unsplash.com/photo-1610641818983-b8d89c03e9d7?auto=format&fit=crop&w=800&q=80",
+      image: fleetImg3,
     },
   ];
 
