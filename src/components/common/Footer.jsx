@@ -45,11 +45,7 @@ const Footer = () => {
                   Fleet
                 </Link>
               </li>
-              <li>
-                <Link to="/pricing" className="hover:text-red-500 transition">
-                  Pricing
-                </Link>
-              </li>
+
               <li>
                 <Link to="/contact" className="hover:text-red-500 transition">
                   Contact
