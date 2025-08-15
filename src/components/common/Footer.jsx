@@ -100,12 +100,12 @@ const Footer = () => {
         <div className="w-full h-px bg-gray-200"></div>
 
         {/* Bottom Bar */}
-        <div className="bg-black text-white text-center py-2 text-sm">
+        <div className="bg-black text-white text-center py-5 text-sm">
           © {new Date().getFullYear()} TranscanRentals. All rights reserved.
-        </div>
-        <div className="bg-black text-white text-center py-2 text-sm">
-          Powered by{" "}
-          <span className="font-semibold text-red-600">Greekology</span>
+          <p>
+            Powered by{" "}
+            <span className="font-semibold text-red-600">Greekology</span>
+          </p>
         </div>
       </footer>
     </>
