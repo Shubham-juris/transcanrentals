@@ -67,7 +67,7 @@ const Footer = () => {
                 <Mail size={18} className="text-red-500" />{" "}
                 info@transcanrentals.com
               </li>
-              <li>123 Transport Ave, Toronto, Canada</li>
+              <li>8500 84 St SE, Calgray, AB T2C3W5 </li>
             </ul>
           </div>
 
@@ -87,13 +87,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="w-full h-px bg-gray-200"></div>
 
         {/* Bottom Bar */}
-        <div className="bg-red-600 text-white text-center py-2 text-sm">
+        <div className="bg-black text-white text-center py-2 text-sm">
           © {new Date().getFullYear()} TranscanRentals. All rights reserved.
         </div>
-        <div className="bg-red-600 text-white text-center py-2 text-sm">
-          Powered by <span className="font-semibold">Greeakology</span>
+        <div className="bg-black text-white text-center py-2 text-sm">
+          Powered by{" "}
+          <span className="font-semibold text-red-600">Greekology</span>
         </div>
       </footer>
     </>

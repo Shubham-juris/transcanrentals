@@ -108,24 +108,26 @@ const Contact = () => {
             <div className="space-y-4">
               <p>
                 <strong className="text-gray-800">📍 Address:</strong>
-                1234 Industrial Ave, Toronto, ON, Canada
+                <span> 8500 84 St SE, Calgary, AB T2C 3W5</span>
               </p>
               <p>
                 <strong className="text-gray-800">📞 Phone:</strong>
-                +1 (234) 567-8901
+                <span> +1 (234) 567-8901</span>
               </p>
               <p>
                 <strong className="text-gray-800">📧 Email:</strong>
-                info@transcanrentals.com
+                <span> info@transcanrentals.com</span>
               </p>
             </div>
 
+            {/* Updated Google Map for Calgary address */}
             <iframe
               title="map"
               className="mt-6 rounded-lg w-full h-64 border-0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.1141493618936!2d-79.38393498450404!3d43.65322507912113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d04e4c9a6d%3A0x8e7b8e7b8e7b8e7!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sca!4v1632180984032!5m2!1sen!2sca"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25153.276987437254!2d-114.0010118!3d50.97673485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717023e0b0e7a9%3A0x6f2fcb2b54bb1df1!2s8500%2084%20St%20SE%2C%20Calgary%2C%20AB%20T2C%203W5%2C%20Canada!5e0!3m2!1sen!2sca!4v1692180984032!5m2!1sen!2sca"
               allowFullScreen=""
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </motion.div>
         </div>
