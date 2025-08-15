@@ -1,5 +1,12 @@
 import React from "react";
-import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -45,7 +52,6 @@ const Footer = () => {
                   Fleet
                 </Link>
               </li>
-
               <li>
                 <Link to="/contact" className="hover:text-red-500 transition">
                   Contact
@@ -67,7 +73,10 @@ const Footer = () => {
                 <Mail size={18} className="text-red-500" />{" "}
                 info@transcanrentals.com
               </li>
-              <li>8500 84 St SE, Calgray, AB T2C3W5 </li>
+              <li className="flex items-center gap-2">
+                <MapPin size={18} className="text-red-500" /> 8500 84 St SE,
+                Calgary, AB T2C3W5
+              </li>
             </ul>
           </div>
 
@@ -87,6 +96,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <div className="w-full h-px bg-gray-200"></div>
 
         {/* Bottom Bar */}
