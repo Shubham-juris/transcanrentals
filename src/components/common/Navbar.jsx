@@ -47,12 +47,12 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <button
+            {/* <button
               onClick={handleClick}
               className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
             >
               Book Now
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile Menu Button */}

@@ -110,10 +110,10 @@ const Contact = () => {
                 <strong className="text-gray-800">📍 Address:</strong>
                 <span> 8500 84 St SE, Calgary, AB T2C 3W5</span>
               </p>
-              <p>
+              {/* <p>
                 <strong className="text-gray-800">📞 Phone:</strong>
                 <span> +1 (234) 567-8901</span>
-              </p>
+              </p> */}
               <p>
                 <strong className="text-gray-800">📧 Email:</strong>
                 <span> info@transcanrentals.com</span>

@@ -66,9 +66,9 @@ const Footer = () => {
               Contact Us
             </h3>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2">
+              {/* <li className="flex items-center gap-2">
                 <Phone size={18} className="text-red-500" /> +1 234 567 890
-              </li>
+              </li> */}
               <li className="flex items-center gap-2">
                 <Mail size={18} className="text-red-500" />{" "}
                 info@transcanrentals.com
