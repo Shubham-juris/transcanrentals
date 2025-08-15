@@ -75,7 +75,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin size={18} className="text-red-500" /> 8500 84 St SE,
-                Calgary, AB T2C3W5
+                Calgary, AB T2C 3W5
               </li>
             </ul>
           </div>
