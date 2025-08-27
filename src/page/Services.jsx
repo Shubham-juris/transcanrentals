@@ -46,7 +46,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.h1
-          className="text-4xl font-bold text-red-500 mb-6 text-center"
+          className="text-4xl font-bold text-yellow-300 mb-6 text-center"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

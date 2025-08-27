@@ -57,7 +57,7 @@ export default function Fleet() {
     <section className="bg-gray-50 py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h1 className="text-4xl font-bold text-red-500 mb-6 text-center">
+        <h1 className="text-4xl font-bold text-yellow-300 mb-6 text-center">
           Our Fleet
         </h1>
         <p className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-12">
@@ -88,7 +88,7 @@ export default function Fleet() {
                 <p className="text-gray-600">{truck.description}</p>
                 <button
                   onClick={handleClick}
-                  className="mt-4 inline-block bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
+                  className="mt-4 inline-block bg-yellow-300 hover:bg-yellow-300 text-black px-4 py-2 rounded-lg transition"
                 >
                   Rent Now
                 </button>

@@ -4,7 +4,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const navigate = useNavigate();
-  const location = useLocation(); // current route check करने के लिए
+  const location = useLocation();
 
   const handleClick = () => {
     navigate("/contact");
@@ -28,8 +28,8 @@ export default function Navbar() {
             className="flex items-center gap-2 text-white font-bold text-xl cursor-pointer"
             onClick={() => navigate("/")}
           >
-            <Truck size={28} className="text-red-500" />
-            Transcan<span className="text-red-500">Rentals</span>
+            <Truck size={28} className="text-yellow-300" />
+            Transcan<span className="text-yellow-300">Rentals</span>
           </div>
 
           {/* Desktop Menu */}
@@ -40,8 +40,8 @@ export default function Navbar() {
                 to={link.path}
                 className={`transition ${
                   location.pathname === link.path
-                    ? "text-red-500 font-semibold"
-                    : "text-gray-300 hover:text-red-500"
+                    ? "text-yellow-400 font-semibold"
+                    : "text-gray-300 hover:text-yellow-400"
                 }`}
               >
                 {link.name}

@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Logo & About */}
           <div>
             <h2 className="text-2xl font-bold text-white mb-4">
-              Transcan<span className="text-red-500">Rentals</span>
+              Transcan<span className="text-yellow-400">Rentals</span>
             </h2>
             <p className="text-sm">
               Reliable truck rentals across Canada. Affordable rates,
@@ -33,27 +33,33 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="hover:text-red-500 transition">
+                <Link to="/" className="hover:text-yellow-300 transition">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-red-500 transition">
+                <Link to="/about" className="hover:text-yellow-300 transition">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-red-500 transition">
+                <Link
+                  to="/services"
+                  className="hover:text-yellow-300 transition"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/fleet" className="hover:text-red-500 transition">
+                <Link to="/fleet" className="hover:text-yellow-300 transition">
                   Fleet
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-red-500 transition">
+                <Link
+                  to="/contact"
+                  className="hover:text-yellow-300 transition"
+                >
                   Contact
                 </Link>
               </li>
@@ -70,11 +76,11 @@ const Footer = () => {
                 <Phone size={18} className="text-red-500" /> +1 234 567 890
               </li> */}
               <li className="flex items-center gap-2">
-                <Mail size={18} className="text-red-500" />{" "}
+                <Mail size={18} className="text-yellow-400" />{" "}
                 info@transcanrentals.com
               </li>
               <li className="flex items-center gap-2">
-                <MapPin size={18} className="text-red-500" /> 8500 84 St SE,
+                <MapPin size={18} className="text-yellow-400" /> 8500 84 St SE,
                 Calgary, AB T2C 3W5
               </li>
             </ul>
@@ -104,7 +110,7 @@ const Footer = () => {
           © {new Date().getFullYear()} TranscanRentals. All rights reserved.
           <p>
             Powered by{" "}
-            <span className="font-semibold text-red-600">Greekology</span>
+            <span className="font-semibold text-yellow-400">Greekology</span>
           </p>
         </div>
       </footer>
