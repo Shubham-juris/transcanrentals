@@ -10,7 +10,7 @@ import { ScrollToTop } from "../ScrollToTop";
 
 const AppRoutes = () => {
   return (
-    <main className="pt-20 min-h-screen">
+    <main className="min-h-screen py-7 ">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />

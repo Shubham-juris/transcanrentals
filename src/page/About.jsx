@@ -1,14 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AboutImage from "../assets/home/HomeHeroImg.jpg";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const Navigate = useNavigate();
   return (
-    <section className="bg-white py-16 px-6 md:px-20">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-gray-50 py-16 px-6 md:px-20">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.h1
-          className="text-4xl font-bold text-yellow-300 mb-4 text-center"
+          className="text-4xl font-bold text-yellow-300 mb-6 text-center"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -17,84 +19,159 @@ const About = () => {
           About Us
         </motion.h1>
 
-        {/* Intro Paragraph */}
-        <motion.p
-          className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-12 leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          At <span className="font-semibold">TranscanRentals</span>, we pride
-          ourselves on being Canada's most trusted truck rental service. With
-          years of experience, a modern fleet, and a passion for customer
-          satisfaction, we help businesses and individuals transport goods
-          efficiently, safely, and affordably.
-        </motion.p>
-
-        {/* Two Column Section */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Image */}
+        {/* Intro with Image */}
+        <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <img
-              src={AboutImage}
-              alt="Truck Rental"
-              className="rounded-lg shadow-lg object-cover w-full h-[300px]"
-            />
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              At <span className="font-semibold">TranscanRentals</span>, we
+              understand that every customer has unique transportation needs. As
+              one of Canada’s most trusted truck rental providers, we offer
+              tailored solutions for both businesses and individuals. Whether
+              it’s a local delivery or a long-haul trip across provinces, our
+              modern fleet and customer-first approach ensure a seamless
+              experience.
+            </p>
+            <p className="text-gray-700 text-lg leading-relaxed">
+              With nationwide coverage, affordable pricing, and a commitment to
+              excellence, we make truck rentals stress-free and reliable.
+            </p>
           </motion.div>
 
-          {/* Content */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Why Choose Us?
-            </h2>
-            <ul className="space-y-3 text-gray-600">
-              <li className="flex items-center gap-2">
-                🚚 Wide range of modern, well-maintained trucks.
-              </li>
-              <li className="flex items-center gap-2">
-                💰 Transparent pricing with no hidden fees.
-              </li>
-              <li className="flex items-center gap-2">
-                🕒 Flexible rental periods to fit your needs.
-              </li>
-              <li className="flex items-center gap-2">
-                🌎 Serving customers across Canada.
-              </li>
-              <li className="flex items-center gap-2">
-                ⭐ 24/7 customer support for peace of mind.
-              </li>
-            </ul>
+            <img
+              src={AboutImage}
+              alt="Truck Rental"
+              className="rounded-2xl shadow-lg object-cover w-full h-[350px] md:h-[450px]"
+            />
           </motion.div>
         </div>
 
-        {/* Mission Section */}
+        {/* Why Choose Section */}
         <motion.div
-          className="mt-16 text-center"
+          className="mb-20"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
+            Why Choose TranscanRentals?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Wide Range of Trucks",
+                desc: "From light-duty vans to heavy-duty trucks, we’ve got you covered.",
+              },
+              {
+                title: "Easy Online Booking",
+                desc: "Reserve your truck in minutes with our simple online platform.",
+              },
+              {
+                title: "Nationwide Coverage",
+                desc: "Serving customers across Canada without delays.",
+              },
+              {
+                title: "Safe & On-Time Delivery",
+                desc: "Reliable, punctual, and stress-free rental services.",
+              },
+              {
+                title: "Transparent Pricing",
+                desc: "No hidden costs—plan your budget with confidence.",
+              },
+              {
+                title: "Trusted by Businesses",
+                desc: "Leading companies rely on us for consistent service.",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition"
+              >
+                <h3 className="text-lg font-semibold text-yellow-500 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* What Sets Us Apart */}
+        <motion.div
+          className="mb-20"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Our Mission
+          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
+            What Sets Us Apart?
           </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Our mission is to provide reliable and affordable truck rental
-            solutions that empower businesses and individuals to move goods with
-            confidence. Whether it's a short local delivery or a long-haul trip,
-            we’re here to help.
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: "Customisable Options",
+                desc: "Pick the right truck for your load, route, and budget.",
+              },
+              {
+                title: "Verified Drivers",
+                desc: "All drivers are trained, experienced, and background-checked.",
+              },
+              {
+                title: "Digital Documentation",
+                desc: "Enjoy paperless bookings, easy uploads, and instant confirmations.",
+              },
+              {
+                title: "24/7 Customer Support",
+                desc: "We’re always available to assist you—day or night.",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition"
+              >
+                <h3 className="text-lg font-semibold text-yellow-500 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* CTA */}
+        <motion.div
+          className="mt-20 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-2xl p-10 text-center shadow-xl"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Ready to Rent a Truck?
+          </h2>
+          <p className="text-gray-800 mb-6 text-lg">
+            Contact <span className="font-semibold">TranscanRentals</span> today
+            and experience hassle-free, affordable, and reliable truck rental
+            services across Canada.
           </p>
+          <button
+            onClick={() => Navigate("/contact")}
+            className="bg-gray-900 text-white px-8 py-3 rounded-lg shadow-md hover:bg-gray-700 transition"
+          >
+            Get Started
+          </button>
         </motion.div>
       </div>
     </section>

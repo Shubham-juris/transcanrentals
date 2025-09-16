@@ -15,22 +15,22 @@ const Home = () => {
 
   const services = [
     {
-      icon: <Truck size={40} className="text-yellow-300 mb-4" />,
+      icon: <Truck size={40} className="text-yellow-400 mb-4" />,
       title: "Wide Range of Trucks",
       desc: "From mini trucks to heavy-duty transport vehicles.",
     },
     {
-      icon: <Clock size={40} className="text-yellow-300 mb-4" />,
+      icon: <Clock size={40} className="text-yellow-400 mb-4" />,
       title: "On-Time Delivery",
       desc: "We ensure timely service for all your logistics needs.",
     },
     {
-      icon: <DollarSign size={40} className="text-yellow-300 mb-4" />,
+      icon: <DollarSign size={40} className="text-yellow-400 mb-4" />,
       title: "Affordable Rates",
       desc: "Best pricing without compromising quality.",
     },
     {
-      icon: <Shield size={40} className="text-yellow-300 mb-4" />,
+      icon: <Shield size={40} className="text-yellow-400 mb-4" />,
       title: "Safe & Secure",
       desc: "Fully insured trucks for worry-free rentals.",
     },
@@ -46,31 +46,31 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section
-        className="relative text-white h-screen flex items-center justify-center"
+        className="relative text-white min-h-screen flex items-center justify-center pt-16 "
         style={{
           backgroundImage: `url(${HomeHeroImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
         <motion.div
-          className="relative z-10 text-center px-4"
+          className="relative z-10 text-center px-6"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold">
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
             Reliable <span className="text-yellow-400">Truck Rentals</span>{" "}
             Across Canada
           </h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-gray-200 max-w-2xl mx-auto">
             Affordable rates, professional service, and on-time delivery for all
             your transport needs.
           </p>
           <button
             onClick={() => navigate("/fleet")}
-            className="mt-6 inline-block bg-yellow-400 hover:bg-yellow-700 text-black px-6 py-3 rounded-lg text-lg transition"
+            className="mt-8 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-xl text-lg shadow-md transition"
           >
             Book Your Truck Now
           </button>
@@ -78,23 +78,23 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-10">
+      <section id="services" className="py-20 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
             Why Choose Us?
           </h2>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service, idx) => (
               <motion.div
                 key={idx}
-                className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+                className="bg-white p-8 rounded-xl shadow hover:shadow-xl transition"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: idx * 0.2 }}
                 viewport={{ once: true }}
               >
                 {service.icon}
-                <h3 className="font-bold mb-2">{service.title}</h3>
+                <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
                 <p className="text-gray-600">{service.desc}</p>
               </motion.div>
             ))}
@@ -103,14 +103,16 @@ const Home = () => {
       </section>
 
       {/* Fleet Section */}
-      <section id="fleet" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-10">Our Fleet</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+      <section id="fleet" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
+            Our Fleet
+          </h2>
+          <div className="grid gap-10 md:grid-cols-3">
             {fleet.map((truck, idx) => (
               <motion.div
                 key={idx}
-                className="bg-gray-100 rounded-lg shadow hover:shadow-lg transition overflow-hidden"
+                className="bg-gray-50 rounded-xl shadow hover:shadow-xl transition overflow-hidden"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: idx * 0.2 }}
@@ -119,16 +121,16 @@ const Home = () => {
                 <img
                   src={truck.img}
                   alt={truck.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-52 object-cover"
                 />
-                <div className="p-4">
-                  <h3 className="font-bold text-lg">{truck.name}</h3>
-                  <p className="text-gray-600">
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold">{truck.name}</h3>
+                  <p className="text-gray-600 mt-2">
                     Perfect for all your transport needs.
                   </p>
                   <button
                     onClick={handleClick}
-                    className="mt-3 inline-block bg-yellow-300 hover:bg-yellow-500 text-black px-4 py-2 rounded-lg transition"
+                    className="mt-4 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-lg shadow transition"
                   >
                     Rent Now
                   </button>
