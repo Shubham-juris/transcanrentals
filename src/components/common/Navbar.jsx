@@ -48,7 +48,7 @@ export default function Navbar() {
               </Link>
             ))}
             <button
-              onClick={() => navigate("/book")}
+              onClick={() => navigate("/contact")}
               className="bg-yellow-400 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition"
             >
               Book Now
