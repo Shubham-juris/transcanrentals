@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import logo from "../../assets/logo/Screenshots/logoTruckRental.png";
+import logo from "../../assets/logo/logoT.png";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-black shadow-md fixed w-full z-50 top-0 left-0">
+    <nav className="bg-white shadow-md fixed w-full z-50 top-0 left-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -26,8 +26,7 @@ export default function Navbar() {
             className="flex items-center gap-2 text-white font-bold text-xl cursor-pointer"
             onClick={() => navigate("/")}
           >
-            <img src={logo} alt="Company Logo" className="h-15 w-15" />
-            Transcan<span className="text-yellow-300">Rentals</span>
+            <img src={logo} alt="Company Logo" className="h-10 w-25" />
           </div>
 
           {/* Desktop Menu */}
@@ -42,7 +41,7 @@ export default function Navbar() {
                 className={`transition ${
                   location.pathname === link.path
                     ? "text-yellow-400 font-semibold"
-                    : "text-gray-300 hover:text-yellow-400"
+                    : "text-gray-600 hover:text-yellow-400"
                 }`}
               >
                 {link.name}
@@ -50,7 +49,7 @@ export default function Navbar() {
             ))}
             <button
               onClick={() => navigate("/book")}
-              className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
+              className="bg-yellow-400 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition"
             >
               Book Now
             </button>

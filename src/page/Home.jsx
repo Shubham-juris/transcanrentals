@@ -53,7 +53,7 @@ const Home = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
         <motion.div
           className="relative z-10 text-center px-6"
           initial={{ opacity: 0, y: 40 }}
@@ -103,7 +103,7 @@ const Home = () => {
       </section>
 
       {/* Fleet Section */}
-      <section id="fleet" className="py-20 bg-white">
+      <section id="fleet" className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
             Our Fleet

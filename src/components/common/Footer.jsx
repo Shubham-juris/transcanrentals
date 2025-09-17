@@ -12,12 +12,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black text-gray-300">
+      <footer className="bg-white text-gray-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & About */}
           <div>
             <h2 className="text-2xl font-bold text-white mb-4">
-              Transcan<span className="text-yellow-400">Rentals</span>
+              <span className="text-gray-600">Transcan</span>{" "}
+              <span className="text-yellow-400">Rentals</span>
             </h2>
             <p className="text-sm">
               Reliable truck rentals across Canada. Affordable rates,
@@ -28,37 +29,37 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">
+            <h3 className="text-lg font-semibold text-gray-600 mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="hover:text-yellow-300 transition">
+                <Link to="/" className="hover:text-yellow-500 transition">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-yellow-300 transition">
+                <Link to="/about" className="hover:text-yellow-500 transition">
                   About
                 </Link>
               </li>
               <li>
                 <Link
                   to="/services"
-                  className="hover:text-yellow-300 transition"
+                  className="hover:text-yellow-500 transition"
                 >
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/fleet" className="hover:text-yellow-300 transition">
+                <Link to="/fleet" className="hover:text-yellow-500 transition">
                   Fleet
                 </Link>
               </li>
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-yellow-300 transition"
+                  className="hover:text-yellow-500 transition"
                 >
                   Contact
                 </Link>
@@ -68,7 +69,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">
+            <h3 className="text-lg font-semibold text-gray-600 mb-4">
               Contact Us
             </h3>
             <ul className="space-y-2">
@@ -88,7 +89,9 @@ const Footer = () => {
 
           {/* Social Media */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
+            <h3 className="text-lg font-semibold text-gray-600 mb-4">
+              Follow Us
+            </h3>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-red-500 transition">
                 <Facebook size={20} />
@@ -106,11 +109,11 @@ const Footer = () => {
         <div className="w-full h-px bg-gray-200"></div>
 
         {/* Bottom Bar */}
-        <div className="bg-black text-white text-center py-5 text-sm">
+        <div className="bg-white text-gray-600 text-center py-5 text-sm">
           © {new Date().getFullYear()} TranscanRentals. All rights reserved.
           <p>
             Powered by{" "}
-            <span className="font-semibold text-yellow-400">Greekology</span>
+            <span className="font-semibold text-yellow-500">Greekology</span>
           </p>
         </div>
       </footer>

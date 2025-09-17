@@ -4,10 +4,11 @@ import AboutImage from "../assets/home/HomeHeroImg.jpg";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
+
   return (
-    <section className="bg-gray-50 py-16 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-gray-100 py-16 px-6 md:px-20 relative">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
         <motion.h1
           className="text-4xl font-bold text-yellow-300 mb-6 text-center"
@@ -31,14 +32,12 @@ const About = () => {
               At <span className="font-semibold">TranscanRentals</span>, we
               understand that every customer has unique transportation needs. As
               one of Canada’s most trusted truck rental providers, we offer
-              tailored solutions for both businesses and individuals. Whether
-              it’s a local delivery or a long-haul trip across provinces, our
-              modern fleet and customer-first approach ensure a seamless
-              experience.
+              tailored solutions for both businesses and individuals.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              With nationwide coverage, affordable pricing, and a commitment to
-              excellence, we make truck rentals stress-free and reliable.
+              Whether it’s a local delivery or a long-haul trip across
+              provinces, our modern fleet and customer-first approach ensure a
+              seamless experience.
             </p>
           </motion.div>
 
@@ -50,7 +49,7 @@ const About = () => {
           >
             <img
               src={AboutImage}
-              alt="Truck Rental"
+              alt="TranscanRentals truck fleet"
               className="rounded-2xl shadow-lg object-cover w-full h-[350px] md:h-[450px]"
             />
           </motion.div>
@@ -167,7 +166,7 @@ const About = () => {
             services across Canada.
           </p>
           <button
-            onClick={() => Navigate("/contact")}
+            onClick={() => navigate("/contact")}
             className="bg-gray-900 text-white px-8 py-3 rounded-lg shadow-md hover:bg-gray-700 transition"
           >
             Get Started
