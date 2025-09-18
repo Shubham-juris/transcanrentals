@@ -38,7 +38,6 @@ const Home = () => {
 
   const fleet = [
     { name: "Mini Truck", img: minitruck },
-    { name: "Box Truck", img: boxtruck },
     { name: "Heavy Duty", img: heavytruck },
   ];
 
@@ -102,17 +101,18 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Fleet Section */}
       <section id="fleet" className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
             Our Fleet
           </h2>
-          <div className="grid gap-10 md:grid-cols-3">
+
+          {/* Updated grid */}
+          <div className="grid gap-10 md:grid-cols-2 justify-items-center">
             {fleet.map((truck, idx) => (
               <motion.div
                 key={idx}
-                className="bg-gray-50 rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+                className="bg-gray-50 rounded-xl shadow hover:shadow-xl transition overflow-hidden w-full max-w-lg"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: idx * 0.2 }}
