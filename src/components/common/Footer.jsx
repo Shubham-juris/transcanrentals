@@ -93,14 +93,22 @@ const Footer = () => {
               Follow Us
             </h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-red-500 transition">
+              <a href="https://www.facebook.com/transcanrentals" className="hover:text-red-500 transition">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:text-red-500 transition">
+              <a href="https://www.instagram.com/transcanrentals/" className="hover:text-red-500 transition">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="hover:text-red-500 transition">
-                <Linkedin size={20} />
+               <a href="https://x.com/TranscanRentals" className="hover:text-red-500 transition">
+                {/* X Logo */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path d="M18.244 2H21l-6.54 7.47L22 22h-6.828l-5.348-7.01L3.5 22H1l7.02-8.02L2 2h6.92l4.86 6.42L18.244 2zm-2.396 18h1.88L8.26 3.9H6.24L15.848 20z"/>
+                </svg>
               </a>
             </div>
           </div>
