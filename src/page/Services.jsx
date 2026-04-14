@@ -107,7 +107,7 @@ export default function Services() {
       description:
         "Designed for long-distance transportation, our long-haul trucks provide reliability, comfort, and performance for cross-country deliveries. Ideal for businesses handling large-scale logistics, these vehicles are equipped to ensure safe and timely transport.",
       image:
-        "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGvVxIlkNDcv5sqSlGKtGLxd_oP9E6-xrvA&s",
     },
     {
       title: "Refrigerated Truck Rentals",
@@ -128,28 +128,28 @@ export default function Services() {
       description:
         "We offer customized fleet rental solutions tailored to business needs. Whether you require multiple vehicles or long-term rental agreements, our services ensure efficiency, cost control, and reliable fleet management for your operations.",
       image:
-        "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200&q=80",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy50NkGtjjDP1kLWM02cREnvcKGrMTdT5Epw&s",
     },
     {
       title: "24/7 Roadside Assistance",
       description:
         "Our support team is available around the clock to ensure your journey remains uninterrupted. From breakdowns to emergency situations, we provide quick and dependable roadside assistance for all rentals.",
       image:
-        "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1200&q=80",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi9LCGPUYA-1YoE9_MONkxiHoYpZeGM8c-2g&s",
     },
     {
       title: "Commercial Property Rentals",
       description:
         "We provide commercial spaces suitable for businesses, logistics operations, and storage needs. Our properties are strategically located to support operational efficiency and business growth, offering flexible rental options.",
       image:
-        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+        "https://www.idealease.com/sites/default/files/styles/featured_image_2_1/public/images/idlsrh_onhighway8x4small_web.jpg?itok=izakVCNQ",
     },
     {
       title: "Residential Property Rentals",
       description:
         "Our residential rental services offer comfortable and convenient living spaces for individuals and families. Whether for short-term or long-term stays, we provide well-maintained properties to meet your accommodation needs.",
       image:
-        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeXNe5HaZo8rWaZbp49BHByBsLnQnzJPi3jQ&s",
     },
     {
       title: "Trailer & Storage Services",
