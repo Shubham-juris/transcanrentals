@@ -149,14 +149,14 @@ export default function Services() {
       description:
         "Our residential rental services offer comfortable and convenient living spaces for individuals and families. Whether for short-term or long-term stays, we provide well-maintained properties to meet your accommodation needs.",
       image:
-        "https://images.unsplash.com/photo-1586528116493-2e9f5d3f1c5b?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
     },
     {
       title: "Trailer & Storage Services",
       description:
         "Secure and accessible storage solutions for trailers, equipment, and goods. Our facilities are designed to support both short-term and long-term storage requirements with safety and convenience in mind.",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1600&q=80",
+        "https://thumbs.dreamstime.com/b/semi-trailer-trucks-parking-lot-warehouse-port-shipping-cargo-container-loading-goods-dock-distribution-big-rig-freight-446566564.jpg",
     },
   ];
 
