@@ -162,15 +162,14 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
-           {/* View More Button */}
-          <div className="mt-12">
-            <button
-              onClick={() => navigate("/fleet")}
-              className="bg-gray-900 hover:bg-black text-white font-semibold px-8 py-3 rounded-xl shadow transition"
-            >
-              View More
-            </button>
-          </div>
+          <div className="mt-12 flex justify-center">
+  <button
+    onClick={() => navigate("/fleet")}
+    className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300"
+  >
+    View More
+  </button>
+</div>
         </div>
       </section>
     </>
