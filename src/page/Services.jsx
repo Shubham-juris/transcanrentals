@@ -121,7 +121,7 @@ export default function Services() {
       description:
         "Built for strength and performance, our heavy-duty trucks are ideal for transporting large equipment, construction materials, and oversized cargo. These vehicles provide the durability and power required for demanding operations.",
       image:
-        "https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80",
     },
     {
       title: "Corporate Fleet Solutions",
@@ -149,7 +149,7 @@ export default function Services() {
       description:
         "Our residential rental services offer comfortable and convenient living spaces for individuals and families. Whether for short-term or long-term stays, we provide well-maintained properties to meet your accommodation needs.",
       image:
-        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586528116493-2e9f5d3f1c5b?auto=format&fit=crop&w=1600&q=80",
     },
     {
       title: "Trailer & Storage Services",
