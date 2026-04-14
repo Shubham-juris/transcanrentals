@@ -121,7 +121,7 @@ export default function Services() {
       description:
         "Built for strength and performance, our heavy-duty trucks are ideal for transporting large equipment, construction materials, and oversized cargo. These vehicles provide the durability and power required for demanding operations.",
       image:
-        "https://images.unsplash.com/photo-1597002973195-6c7c2bfa6c13?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=1600&q=80",
     },
     {
       title: "Corporate Fleet Solutions",
@@ -156,7 +156,7 @@ export default function Services() {
       description:
         "Secure and accessible storage solutions for trailers, equipment, and goods. Our facilities are designed to support both short-term and long-term storage requirements with safety and convenience in mind.",
       image:
-        "https://images.unsplash.com/photo-1581093588401-16ec4f8f2b3c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1600&q=80",
     },
   ];
 
