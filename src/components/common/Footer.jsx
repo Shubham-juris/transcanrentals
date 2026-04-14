@@ -21,9 +21,8 @@ const Footer = () => {
               <span className="text-yellow-400">Rentals</span>
             </h2>
             <p className="text-sm">
-              Reliable truck rentals across Canada. Affordable rates,
-              professional service, and on-time delivery for all your transport
-              needs.
+              From truck rentals to storage and property solutions, 
+              we deliver reliable, affordable, and efficient services tailored to your needs.
             </p>
           </div>
 
