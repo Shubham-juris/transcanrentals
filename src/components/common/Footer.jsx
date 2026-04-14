@@ -67,26 +67,76 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold text-gray-600 mb-4">
-              Contact Us
-            </h3>
-            <ul className="space-y-2">
-              {/* <li className="flex items-center gap-2">
-                <Phone size={18} className="text-red-500" /> +1 234 567 890
-              </li> */}
-              <li className="flex items-center gap-2">
-                <Mail size={18} className="text-yellow-400" />{" "}
-                info@transcanrentals.com
-              </li>
-              <li className="flex items-center gap-2">
-                <MapPin size={18} className="text-yellow-400" /> 8500 84 St SE,
-                Calgary, AB T2C 3W5
-              </li>
-            </ul>
-          </div>
+        {/* Contact Info */}
+<div>
+  <h3 className="text-lg font-semibold text-gray-600 mb-4">
+    Contact Us
+  </h3>
+  <ul className="space-y-4 text-sm">
+    {/* Email */}
+    <li className="flex items-start gap-2">
+      <Mail size={18} className="text-yellow-400 mt-1" />
+      <a
+        href="mailto:info@transcanrentals.com"
+        className="hover:text-yellow-500 transition"
+      >
+        info@transcanrentals.com
+      </a>
+    </li>
 
+    {/* Address 1 */}
+    <li className="flex items-start gap-2 pb-3 border-b border-gray-200">
+      <MapPin size={18} className="text-yellow-400 mt-1" />
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=8500+84+St+SE,+Calgary,+AB+T2C+3W5"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-yellow-500 transition"
+      >
+        8500 84 St SE, Calgary, AB T2C 3W5
+      </a>
+    </li>
+
+    {/* Address 2 */}
+    <li className="flex items-start gap-2 pb-3 border-b border-gray-200">
+      <MapPin size={18} className="text-yellow-400 mt-1" />
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=1750+Brittania+Rd+East,+Mississauga,+ON,+Canada"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-yellow-500 transition"
+      >
+        1750 Britannia Rd East, Mississauga, ON, Canada
+      </a>
+    </li>
+
+    {/* Address 3 */}
+    <li className="flex items-start gap-2 pb-3 border-b border-gray-200">
+      <MapPin size={18} className="text-yellow-400 mt-1" />
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=21+Pippy+Pl,+St.+John's,+NL+A1B+3X2"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-yellow-500 transition"
+      >
+        21 Pippy Pl, St. John's, NL A1B 3X2
+      </a>
+    </li>
+
+    {/* Address 4 */}
+    <li className="flex items-start gap-2">
+      <MapPin size={18} className="text-yellow-400 mt-1" />
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=1835+Albert+Street,+Regina,+SK+S4P+2S9"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-yellow-500 transition"
+      >
+        1835 Albert Street, Regina, SK S4P 2S9
+      </a>
+    </li>
+  </ul>
+</div>
           {/* Social Media */}
           <div>
             <h3 className="text-lg font-semibold text-gray-600 mb-4">
