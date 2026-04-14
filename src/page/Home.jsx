@@ -1,5 +1,13 @@
 import HomeHeroImg from "../assets/home/HomeHerorImg6.jpg";
-import { Truck, Clock, DollarSign, Shield } from "lucide-react";
+import {
+  Truck,
+  Clock,
+  DollarSign,
+  Shield,
+  Building2,
+  Warehouse,
+  Layers,
+} from "lucide-react";
 import minitruck from "../assets/home/HomeHeroImg.jpg";
 import boxtruck from "../assets/home/HomeHeroImg4.jpg";
 import heavytruck from "../assets/home/HomeHerorImg5.jpg";
@@ -34,6 +42,22 @@ const Home = () => {
       title: "Safe & Secure",
       desc: "Fully insured trucks for worry-free rentals.",
     },
+    {
+      icon: <Building2 size={40} className="text-yellow-400 mb-4" />,
+      title: "Flexible Property Solutions",
+      desc: "Commercial and residential rental options designed to suit business and personal needs with flexible terms.",
+    },
+    {
+      icon: <Warehouse size={40} className="text-yellow-400 mb-4" />,
+      title: "Reliable Storage & Trailer Facilities",
+      desc: "Secure and accessible spaces for trailers, equipment, and goods, supporting both short-term and long-term storage.",
+    },
+    {
+      icon: <Layers size={40} className="text-yellow-400 mb-4" />,
+      title: "All-in-One Rental Solutions",
+      desc: "From transportation to storage and property rentals, we provide complete solutions under one roof for added convenience.",
+      highlight: true, // Used to emphasize this card
+    },
   ];
 
   const fleet = [
@@ -60,18 +84,18 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-            Reliable <span className="text-yellow-400">Truck Rentals</span>{" "}
+            Complete <span className="text-yellow-400">Rental Solution</span>{" "}
             Across Canada
           </h1>
           <p className="mt-6 text-lg text-gray-200 max-w-2xl mx-auto">
-            Affordable rates, professional service, and on-time delivery for all
-            your transport needs.
+            From truck rentals to storage and property solutions, we deliver reliable, 
+            affordable, and efficient services tailored to your needs.
           </p>
           <button
             onClick={() => navigate("/fleet")}
             className="mt-8 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-xl text-lg shadow-md transition"
           >
-            Book Your Truck Now
+            Book Now
           </button>
         </motion.div>
       </section>
@@ -137,6 +161,15 @@ const Home = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+           {/* View More Button */}
+          <div className="mt-12">
+            <button
+              onClick={() => navigate("/fleet")}
+              className="bg-gray-900 hover:bg-black text-white font-semibold px-8 py-3 rounded-xl shadow transition"
+            >
+              View More
+            </button>
           </div>
         </div>
       </section>
