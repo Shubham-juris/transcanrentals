@@ -192,14 +192,14 @@ export default function Fleet() {
 
       {/* Fleet Grid Section (Remains the Same) */}
       <section className="bg-gray-100 py-16 px-6 md:px-20">
-        <div className="max-w-7xl mx-auto">
+        {/* <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-yellow-400 mb-6 text-center">
             Our Fleet
           </h2>
           <p className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-12">
             Choose from our wide selection of well-maintained trucks to match your
             transportation needs.
-          </p>
+          </p> */}
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {fleetData.map((truck, index) => (
