@@ -101,6 +101,7 @@
 //   );
 // }
 
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -161,14 +162,14 @@ export default function Fleet() {
     <>
       {/* Hero Banner Section */}
       <section
-        className="relative h-[60vh] flex items-center justify-center text-center"
+        className="relative h-[70vh] md:h-[80vh] flex items-center justify-center text-center"
         style={{
-          backgroundImage: `url(${fleetImg})`,
+          backgroundImage: `url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        {/* Overlay */}
+        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
 
         {/* Banner Content */}
@@ -178,21 +179,20 @@ export default function Fleet() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-4">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-snug mb-4">
             Choose from our wide selection of well-maintained trucks to match
             your transportation needs.
           </h1>
-          <p className="text-lg md:text-xl text-gray-200">
+          <p className="text-base md:text-lg text-gray-200">
             We also offer storage, trailer, and property rental solutions to
             support your operations end-to-end.
           </p>
         </motion.div>
       </section>
 
-      {/* Fleet Grid Section (Unchanged) */}
+      {/* Fleet Grid Section (Remains the Same) */}
       <section className="bg-gray-100 py-16 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
-          {/* Optional Section Heading */}
           <h2 className="text-4xl font-bold text-yellow-400 mb-6 text-center">
             Our Fleet
           </h2>
@@ -201,7 +201,6 @@ export default function Fleet() {
             transportation needs.
           </p>
 
-          {/* Fleet Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {fleetData.map((truck, index) => (
               <motion.div
@@ -238,3 +237,4 @@ export default function Fleet() {
     </>
   );
 }
+
