@@ -29,15 +29,12 @@ const About = () => {
             viewport={{ once: true }}
           >
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              At <span className="font-semibold">TranscanRentals</span>, we
-              understand that every customer has unique transportation needs. As
-              one of Canada’s most trusted truck rental providers, we offer
-              tailored solutions for both businesses and individuals.
+              At <span className="font-semibold">TranscanRentals</span>, we understand that every customer has unique transportation and space requirements.
+              As one of Canada’s trusted rental providers, we offer flexible solutions for businesses and individuals across trucks, storage, and property rentals.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Whether it’s a local delivery or a long-haul trip across
-              provinces, our modern fleet and customer-first approach ensure a
-              seamless experience.
+             Whether it’s a local delivery, a long-haul trip, or secure storage and rental space,
+              our reliable fleet and customer-first approach ensure a smooth and dependable experience.
             </p>
           </motion.div>
 
@@ -158,18 +155,17 @@ const About = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Rent a Truck?
+            Ready to Get Started?
           </h2>
           <p className="text-gray-800 mb-6 text-lg">
-            Contact <span className="font-semibold">TranscanRentals</span> today
-            and experience hassle-free, affordable, and reliable truck rental
-            services across Canada.
+            Contact <span className="font-semibold">TranscanRentals</span> today for reliable truck rentals, storage solutions, 
+            and property services tailored to your needs.
           </p>
           <button
             onClick={() => navigate("/contact")}
             className="bg-gray-900 text-white px-8 py-3 rounded-lg shadow-md hover:bg-gray-700 transition"
           >
-            Get Started
+            Get A Qoute
           </button>
         </motion.div>
       </div>
